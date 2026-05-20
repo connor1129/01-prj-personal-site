@@ -1,1 +1,257 @@
-/* Add you CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Simple page styles for a minimal portfolio */
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  background:
+    repeating-linear-gradient(90deg, transparent 0, transparent 48px, rgba(0, 0, 0, 0.08) 48px, rgba(0, 0, 0, 0.08) 49px) 0 120px / 100% 240px no-repeat,
+    repeating-linear-gradient(180deg, transparent 0, transparent 56px, rgba(0, 0, 0, 0.08) 56px, rgba(0, 0, 0, 0.08) 57px) 140px 0 / 280px 100% no-repeat,
+    linear-gradient(45deg, rgba(0, 0, 0, 0.08) 1px, transparent 1px) 32px 36px / 640px 640px no-repeat,
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px) 180px 90px / 760px 760px no-repeat,
+    linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px) 0 0 / 100% 160px no-repeat,
+    linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px) 0 0 / 160px 100% no-repeat,
+    #ffffff;
+  color: #111111;
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+body > * {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.site-header {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 18px;
+  position: relative;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 120px;
+  height: 1px;
+  background: #9d9d9d;
+  opacity: 0.85;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -24px;
+  height: 1px;
+  background: #d7d7d7;
+  opacity: 0.7;
+}
+
+.site-header::before,
+.site-header::after,
+.site-header::after {
+  pointer-events: none;
+}
+
+.site-brand::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 46px;
+  height: 1px;
+  background: #b8b8b8;
+  opacity: 0.7;
+}
+
+.site-brand {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.site-brand::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 64px;
+  height: 1px;
+  background: #b3b3b3;
+  opacity: 0.5;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  position: relative;
+}
+
+
+.site-nav a {
+  color: #111111;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.site-nav a:hover,
+.button-link:hover {
+  border-bottom-color: #111111;
+}
+
+.button-link {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.section#contact i {
+  margin-right: 8px;
+  font-style: normal;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.section h2 {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  position: relative;
+  display: inline-block;
+}
+
+.intro {
+  max-width: 650px;
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  position: relative;
+}
+
+
+
+.section h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: calc(100vw - 240px - 100%);
+  max-width: 420px;
+  min-width: 30px;
+  height: 1px;
+  background: #111111;
+  opacity: 0.2;
+  margin-left: 24px;
+  transform: translateY(-50%);
+}
+
+.section p {
+  margin: 0 0 20px;
+  max-width: 720px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  position: relative;
+}
+
+.card {
+  flex: 1 1 250px;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+  background: #ffffff;
+  position: relative;
+}
+
+.project-image {
+  height: 170px;
+  margin-bottom: 18px;
+  background: #eaeaea;
+  border: 1px solid #d6d6d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list li {
+  background: #f4f4f4;
+  padding: 10px 14px;
+  border: 1px solid #e1e1e1;
+}
+
+.site-footer {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding-bottom: 40px;
+  color: #555555;
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .cards,
+  .gallery,
+  .skill-list {
+    flex-direction: column;
+  }
+}

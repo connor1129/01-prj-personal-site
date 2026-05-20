@@ -2,10 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- Add your HTML content here -->
-</body>
-</html>
+  <header class="site-header" id="top">
+    <div class="site-brand">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Connor King</h1>
+    </div>
+    <nav class="site-nav">
+      <a href="#top">Home</a>
+      <a href="about.html" class="button-link">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>Biography</h2>
+      <p>I am a second-year architecture student with a passion for travel, learning, and building relationships with others. I am using this site to share my projects, ideas, and design explorations as I grow in my studies.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="project-image">
+            <img src="img/HERO SHOT.jpg" alt="Over the Rhine Community Center">
+          </div>
+          <h3>Over the Rhine Community Center</h3>
+          <p>A community-focused architecture project that highlights public space, connection, and thoughtful material use.</p>
+        </article>
+        <article class="card">
+          <div class="project-image">
+            <img src="img/Waterfolly-05.jpg" alt="Waterfolly project image">
+          </div>
+          <h3>Waterfolly</h3>
+          <p>A conceptual design project exploring water, landscape, and architectural form through minimal composition.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Responsive design</li>
+        <li>Typography</li>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+        <li>Rhino</li>
+        <li>Revit</li>
+      </ul>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Feel free to connect as I develop new architectural projects and design work.</p>
+      <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:conking1129@gmail.com">conking1129@gmail.com</a></p>
+      <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:king4cp@mail.uc.edu">king4cp@mail.uc.edu</a></p>
+      <p><i class="fas fa-phone" aria-hidden="true"></i> (765) 425-9756</p>
+    </section>
+  </main>
